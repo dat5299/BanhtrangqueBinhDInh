@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bánh Tráng Bình Định</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e8f5e9; /* Màu nền xanh lá nhạt */
+            color: #333;
+        }
+
+        header {
+            background-color: #2e7d32; /* Màu xanh lá đậm */
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        header img {
+            position: absolute;
+            top: 50%; /* Căn chỉnh theo chiều dọc */
+            transform: translateY(-50%); /* Đảm bảo hình ảnh nằm chính giữa chiều dọc */
+            width: 140px;
+            height: 140px;
+            border-radius: 50%; /* Làm tròn hình ảnh */
+        }
+
+        header img:first-of-type {
+            left: 60px; /* Hình bên trái */
+        }
+
+        header img.right {
+            right: 60px; /* Hình bên phải */
+        }
+
+        nav {
+            background-color: #66bb6a; /* Màu xanh lá sáng */
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+       .intro {
+            background-color: #a5d6a7; /* Màu xanh lá nhạt hơn */
+			
+			 align-items: center;
+            padding: 20px;
+            text-align: center;
+			
+			
+			img {
+            width: 45%;
+			height: 50% 
+            border-radius: 10px;
+			
+			
+			
+			
+			
+			
+			
+		
+ 
+  
+    height: 500px; /* Chiều cao container, nếu muốn căn giữa theo chiều dọc */
+  }
+
+  .image-container img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+        .intro h2 {
+            color: #2e7d32; /* Màu tiêu đề xanh lá đậm */
+        }
+
+        .video-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 50px;
+            background-color: #c8e6c9; /* Màu nền xanh lá nhạt */
+        }
+
+        .video-section .content {
+            flex: 1;
+            padding-right: 40px;
+        }
+
+        .video-section iframe {
+            flex: 1;
+            max-width: 100%;
+            height: 500px;
+            border: none;
+            border-radius: 10px;
+        }
+		
+		.left-align-section {
+    text-align: left; /* Canh toàn bộ văn bản trong section về trái */
+    padding: 20px; /* Tùy chọn: thêm khoảng cách */
+}
+		
+		
+		
+		
+	.section-layout {
+    display: flex; /* Bố cục ngang với hình và văn bản */
+    align-items: center; /* Căn giữa hình và văn bản theo chiều dọc */
+    background-color: #004d00; /* Màu nền xanh lá đậm */
+    color: white; /* Chữ màu trắng */
+    padding: 20px; /* Khoảng cách bên trong */
+    border-radius: 10px; /* Bo góc cho phần nền */
+}
+
+.section-layout img {
+    max-width: 40%; /* Giới hạn chiều rộng của hình ảnh */
+    margin-right: 20px; /* Tạo khoảng cách giữa hình và văn bản */
+    border-radius: 10px; /* Bo góc cho hình ảnh */
+}
+
+.section-layout div {
+    flex: 1; /* Phần văn bản chiếm không gian còn lại */
+    line-height: 1.8; /* Khoảng cách dòng văn bản */
+    text-align: left; /* Canh chữ lề trái */
+}
+		
+		
+		
+		
+		
+		.section-layout1 {
+    display: flex; /* Sử dụng flexbox để đặt chữ và hình cạnh nhau */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    justify-content: space-between; /* Tạo khoảng cách đều giữa chữ và hình */
+    background-color: 66ff00; /* Màu nền nhạt để phân biệt phần này */
+    padding: 20px; /* Tạo khoảng cách bên trong */
+    border-radius: 10px; /* Bo góc cho phần nền */
+}
+
+.section-layout1 img {
+    max-width: 40%; /* Hình ảnh chiếm tối đa 40% chiều rộng */
+    height: auto; /* Giữ tỷ lệ của hình ảnh */
+    border-radius: 10px; /* Bo góc hình ảnh */
+    margin-left: 20px; /* Tạo khoảng cách giữa hình và chữ */
+}
+
+.section-layout1 div {
+    flex: 1; /* Văn bản chiếm không gian còn lại */
+    text-align: left; /* Canh văn bản lề trái */
+    line-height: 1.8; /* Khoảng cách giữa các dòng văn bản */
+}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+        .product-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .product {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 15px;
+            width: 300px;
+            background-color: white;
+            text-align: center;
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .product h3 {
+            color: #2e7d32; /* Màu tiêu đề sản phẩm xanh lá đậm */
+        }
+
+        .product button {
+            background-color: #2e7d32;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .product button:hover {
+            background-color: #1b5e20; /* Màu xanh lá đậm hơn khi hover */
+        }
+
+       .blog-section img {
+            flex: 1;
+            max-width: 300px;
+
+            height: auto;
+            margin-right: 20px;
+            border-radius: 10px;
+        }
+
+        .blog-content {
+            flex: 2;
+        }
+
+        .blog-section h2 {
+            color: #558b2f;
+            margin-bottom: 15px;
+        }
+
+        .blog-section p {
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+
+        #contact {
+            background-color: #dcedc8; /* Màu nền riêng cho phần liên hệ */
+            padding: 20px;
+            text-align: center;
+        }
+
+        #contact h2 {
+            color: #33691e; /* Màu tiêu đề xanh đậm hơn */
+        }
+
+        #contact p {
+            margin: 10px 0;
+            line-height: 1.5;
+        }
+
+        #contact a {
+            color: #558b2f;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #contact a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #2e7d32;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        footer a {
+            color: #a5d6a7;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="1.jpg" alt="Logo Bánh Tráng">
+        <img src="1.jpg" alt="Logo Bánh Tráng" class="right">
+        <h1>Bánh Tráng Bình Định</h1>
+        <p>Đặc sản quê nhà - Hương vị khó quên</p>
+    </header>
+
+    <nav>
+        <a href="#intro">Giới Thiệu</a>
+        <a href="#products">Sản Phẩm</a>
+        <a href="#video">Video</a>
+        <a href="#contact">Liên Hệ</a>
+    </nav>
+
+    <section id="intro" class="intro">
+        <h2>Về Chúng Tôi</h2>
+       <p style="font-size: 25px;">Bánh Tráng Quê - Bình Định là sự kết hợp tinh tế giữa truyền thống và hương vị đặc biệt trong từng tấm bánh. Mỗi sản phẩm mang đậm ký ức tuổi thơ, được làm từ đôi tay khéo léo của người bà, người mẹ miền Trung. Dù cách xa ngàn dặm, chúng tôi vẫn mang hương vị truyền thống đến tận tay khách hàng, giúp bạn thưởng thức bánh tráng quê hương ngay tại nhà .</p>
+    
+	  <img src="4.jpg" alt="Bánh Tráng Dừa">
+	 <img src="6.jpg" alt="Bánh Tráng Dừa">
+	 
+
+   <section id="video" class="video-section">
+        <div class="content">
+            <br></br>
+			<br></br>
+			<h2>Video Giới Thiệu</h2>
+            <p style="font-size: 20px;">Xuất phát từ vùng đất Bình Định trù phú, chúng tôi mang trong mình đam mê giữ gìn nghệ thuật làm bánh tráng thủ công. Mỗi tấm bánh đều được làm bằng tay, từ nguyên liệu tự nhiên, mang đến hương vị đặc trưng. Sản phẩm của chúng tôi gồm Bánh Tráng Nước Dừa, với vị béo ngậy từ nước cốt dừa tươi, và Bánh Tráng Cuốn Mè Đen, giòn tan với hương mè đen dịu nhẹ. Chúng tôi cam kết cung cấp sản phẩm sạch, an toàn, giữ trọn vẹn hương vị quê nhà, tạo ra những trải nghiệm ẩm thực đáng nhớ cho khách hàng.</p>
+        </div>
+        <iframe src="VIDEO.mp4" width="640" height="360"allowfullscreen></iframe>
+		
+		
+		
+    </section>
+
+    
+  
+
+   <section class="section-layout">
+        <div style="display: flex; align-items: flex-start;">
+            <img src="9.jpg" alt="Bánh Tráng Nước Dừa" style="width: 600px; margin-right: 150px;">
+            <div>
+                <h2>Blog 1: Bạn Đã Biết Bánh Tráng Nước Dừa Được Sản Xuất Như Thế Nào Chưa?</h2>
+                <p>Bánh tráng nước dừa là một trong những đặc sản trứ danh của vùng đất Bình Định, không chỉ hấp dẫn bởi hương vị thơm ngon mà còn bởi quy trình sản xuất công phu. Hãy cùng Bánh Tráng Quê - Bình Định khám phá từng bước để hiểu rõ hơn về cách làm ra loại bánh này nhé!</p>
+                <ul>
+                    <li><strong>Lựa Chọn Nguyên Liệu:</strong> Quá trình sản xuất bắt đầu từ việc chọn lựa những hạt gạo ngon và nước cốt dừa tươi. Gạo được tuyển chọn kỹ càng để đảm bảo hương vị và chất lượng của từng tấm bánh. Nước cốt dừa được lấy từ những trái dừa tươi, béo ngậy, mang lại hương vị đặc trưng cho bánh tráng.</li>
+                    <li><strong>Xay Bột Và Pha Trộn:</strong> Gạo sau khi được ngâm nước đủ thời gian sẽ được xay nhuyễn thành bột mịn. Bột gạo sau đó được pha trộn với nước cốt dừa và một ít muối theo tỷ lệ vừa đủ để tạo nên hỗn hợp bột bánh. Công đoạn này yêu cầu sự chính xác để đảm bảo bột có độ sánh mịn và không bị vón cục.</li>
+                    <li><strong>Tráng Bánh:</strong> Hỗn hợp bột sau khi pha trộn sẽ được tráng trên khuôn nóng để tạo thành từng tấm bánh mỏng. Người thợ sẽ dùng một chiếc muỗng lớn để múc bột, rồi nhanh tay dàn đều lên khuôn thành lớp mỏng. Công đoạn này đòi hỏi kỹ thuật cao để bánh có độ mỏng đều và không bị rách.</li>
+                    <li><strong>Phơi Khô:</strong> Bánh sau khi tráng sẽ được mang ra phơi khô dưới ánh nắng tự nhiên. Thời gian phơi phụ thuộc vào điều kiện thời tiết, thường kéo dài từ 1-2 ngày. Ánh nắng giúp bánh khô đều, giữ được độ giòn và hương vị tự nhiên của nước dừa.</li>
+                    <li><strong>Đóng Gói:</strong> Sau khi bánh đã khô hoàn toàn, chúng sẽ được kiểm tra chất lượng lần cuối trước khi đem đóng gói. Bánh tráng nước dừa được xếp cẩn thận vào từng gói, đảm bảo không bị gãy vỡ trong quá trình vận chuyển. Công đoạn đóng gói cũng phải tuân thủ các tiêu chuẩn vệ sinh an toàn thực phẩm nghiêm ngặt.</li>
+                </ul>
+                <p><strong>Kết Luận:</strong> Qua từng bước sản xuất, có thể thấy bánh tráng nước dừa không chỉ là một món ăn ngon mà còn là sản phẩm của sự tỉ mỉ và tâm huyết. Mỗi tấm bánh mang trong mình hương vị đặc trưng và tình yêu của những người thợ làm bánh đất Bình Định. Hy vọng bài viết này đã giúp bạn hiểu rõ hơn về quy trình sản xuất bánh tráng nước dừa và trân trọng hơn mỗi tấm bánh khi thưởng thức.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <section class="section-layout1">
+    <img src="11.jpg" alt="Mô tả hình ảnh">
+    <div>
+            <h2>Blog 2: Tận Hưởng Hương Vị Độc Đáo Với Bánh Tráng Nước Dừa và Bánh Tráng Cuốn Mè Đen</h2>
+            <p>Chào mừng bạn đến với trang blog của Bánh Tráng Quê - Bình Định! Chúng tôi tự hào giới thiệu hai sản phẩm đặc biệt: Bánh Tráng Nước Dừa và Bánh Tráng Cuốn Mè Đen. Đây là những sản phẩm không chỉ mang đậm hương vị truyền thống mà còn mang lại sự phong phú cho bữa ăn hàng ngày của bạn. Hãy cùng khám phá cách sử dụng chúng để tận hưởng trọn vẹn hương vị độc đáo nhé!</p>
+            <ul>
+                <li><strong>Bánh Tráng Nước Dừa:</strong> Giòn tan, thơm phức, được làm từ bột gạo và nước cốt dừa tươi ngon.
+                    <ul>
+                        <li><strong>Nướng Bánh Tráng Nước Dừa:</strong> Bạn có thể nướng bánh trên than hoa hoặc lò nướng cho đến khi bánh giòn và vàng đều. Bánh tráng nướng nước dừa có thể ăn kèm với mắm nêm, mắm ruốc hoặc các loại nước chấm khác, mang đến một món ăn giòn tan, thơm phức và đầy hấp dẫn.</li>
+                        <li><strong>Bánh Tráng Nướng Kẹp Trứng:</strong> Một cách sáng tạo khác là làm bánh tráng nướng kẹp trứng. Nướng bánh tráng đến khi giòn, sau đó đập một quả trứng lên bánh, rắc thêm hành lá, tôm khô và gia vị. Nướng thêm vài phút đến khi trứng chín để có món ăn vặt hấp dẫn.</li>
+                    </ul>
+                </li>
+                <li><strong>Bánh Tráng Cuốn Mè Đen:</strong> Sản phẩm kết hợp giữa bột gạo và mè đen, mang lại hương vị đậm đà, giòn tan, đầy hấp dẫn.
+                    <ul>
+                        <li><strong>Gỏi Cuốn Bánh Tráng Mè Đen:</strong> Sử dụng bánh tráng cuốn mè đen để làm gỏi cuốn là lựa chọn tuyệt vời. Nhúng bánh tráng qua nước ấm để bánh mềm, sau đó cuốn cùng tôm, thịt, rau sống và bún. Chấm với nước mắm chua ngọt hoặc tương đậu phộng sẽ tăng thêm hương vị cho món ăn.</li>
+                        <li><strong>Ăn Kèm Với Món Khác:</strong> Bánh tráng cuốn mè đen có thể ăn kèm với các món nướng, món chiên hoặc dùng như một món ăn nhẹ, tạo nên sự mới lạ và phong phú cho bữa ăn hàng ngày. Hương thơm của mè đen kết hợp với các nguyên liệu sẽ làm món ăn thêm phần đặc sắc.</li>
+                    </ul>
+                </li>
+            </ul>
+            <p><strong>Kết Nối Hương Vị Quê Nhà:</strong> Dù bạn chọn bánh tráng nước dừa hay bánh tráng cuốn mè đen, mỗi loại bánh đều mang đến một trải nghiệm ẩm thực độc đáo và đậm chất miền Trung. Tại Bánh Tráng Quê - Bình Định, chúng tôi luôn nỗ lực để mang đến cho bạn những sản phẩm chất lượng nhất, giữ trọn vẹn hương vị quê nhà và mang lại sự phong phú cho bữa ăn hàng ngày của bạn.</p>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <section class="section-layout">
+    <img src="12.jpg" alt="Mô tả hình ảnh">
+    <div>
+            <h2>Blog 3: Bánh Tráng Quê - Bình Định: Kết Nối Hương Vị Quê Nhà</h2>
+            <p><strong>Nghệ Thuật Làm Bánh Tráng Thủ Công:</strong> Bánh Tráng Quê - Bình Định là biểu tượng của sự tinh túy và truyền thống. Được làm thủ công bởi các nghệ nhân Bình Định, mỗi tấm bánh tráng là một tác phẩm nghệ thuật, mang đậm nét đặc trưng của văn hóa ẩm thực địa phương.</p>
+            <p><strong>Sản Phẩm Đa Dạng:</strong> Với hai dòng sản phẩm nổi bật là Bánh Tráng Nước Dừa và Bánh Tráng Cuốn Mè Đen, Bánh Tráng Quê - Bình Định mang đến sự lựa chọn đa dạng cho người tiêu dùng. Mỗi sản phẩm đều có hương vị đặc trưng riêng, phù hợp với nhiều món ăn và sở thích khác nhau.</p>
+            <p><strong>Cam Kết Chất Lượng:</strong> Chúng tôi cam kết mang đến những sản phẩm sạch, an toàn và giữ trọn vẹn hương vị quê nhà. Từ khâu chọn lựa nguyên liệu đến quy trình sản xuất, mọi thứ đều được kiểm tra nghiêm ngặt để đảm bảo chất lượng cao nhất.</p>
+            <p><strong>Kết Nối Yêu Thương:</strong> Dù bạn ở bất kỳ đâu, Bánh Tráng Quê - Bình Định luôn mong muốn mang đến cho bạn hương vị của quê nhà, giúp bạn cảm nhận được sự ấm áp và thân thuộc trong từng tấm bánh tráng.</p>
+        </div>
+    </section>
+	
+	
+	<section id="video" class="video-section">
+        <div class="content">
+	<p><span style="font-size: 70px; color: red;">BẠN MUỐN ĂN VẶT. ĐẶT HÀNG NGAY</span> .</p>
+	
+
+	
+	 </section>
+	
+	
+
+
+
+
+
+
+
+    <section id="products" class="product-list">
+        <h2 style="color: #2e7d32;">Sản Phẩm</h2>
+        <div class="product">
+            <img src="2.jpg" alt="Bánh Tráng Me">
+            <h3>Bánh Tráng Mè</h3>
+            <p>Giá: 50,000 VND</p>
+            <a href="https://shopee.vn/B%C3%A1nh-tr%C3%A1ng-m%C3%A8-xu%E1%BA%A5t-x%E1%BB%A9-t%E1%BA%A1i-B%C3%ACnh-%C4%90%E1%BB%8Bnh-th%C6%A1m-th%C6%A1m-ngon-ngon-i.206610845.27171202915?sp_atk=eea20d60-ec9b-4984-bff8-8f866773e766" target="_blank">
+                <button>Mua Ngay</button>
+            </a>
+        </div>
+        <div class="product">
+            <img src="3.jpg" alt="Bánh Tráng Dừa">
+            <h3>Bánh Tráng Dừa</h3>
+            <p>Giá: 60,000 VND</p>
+            <a href="https://shopee.vn/B%C3%A1nh-tr%C3%A1ng-d%E1%BB%ABa-i.206610845.27571211044?sp_atk=595c4f14-518c-4bf0-a6a8-21c10392d6b6" target="_blank">
+                <button>Mua Ngay</button>
+            </a>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Liên Hệ</h2>
+        <p>Địa chỉ: 70 Phạm Ngọc Thạch, phường Võ Thị Sáu, quận 3</p>
+        <p>Email: banhtrangbinhdinh@gmail.com</p>
+        <p>Hotline: 0933935806</p>
+        <a href="#top">Quay về đầu trang</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Bánh Tráng Bình Định. Mọi quyền được bảo lưu.</p>
+    </footer>
+</body>
+</html>
